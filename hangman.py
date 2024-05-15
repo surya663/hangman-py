@@ -17,6 +17,10 @@ def get_player_input(guessed_letters):
             return player_input
 
 
+def join_guessed_letters(guessed_letters):
+    return " ".join(sorted(guessed_letters))
+
+
 def hangman():
     rand_word = get_random_word()
 
