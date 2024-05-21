@@ -29,8 +29,7 @@ def show_guessed_word(rand_word, guessed_letters):
     return " ".join(current_letters)
 
 
-def hangman():
+if __name__ == "__main__":
     rand_word = get_random_word()
-
-
-hangman()
+    guessed_letters = set()
+    player_input = get_player_input(guessed_letters)
